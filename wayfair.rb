@@ -16,7 +16,6 @@ class Leaderboard
     #Helper Function for finding average score for a player
     def average_score(player)
         scores = @players[player]
-        scores = @players[player]
         average = (scores.reduce(:+)*1.0)/scores.length * 1.0 #Multiplying by 1.0 to make sure the computed result is Float
         @scores[player] = average
         average
