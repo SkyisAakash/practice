@@ -1,3 +1,4 @@
+const customTest = require('./jsTest')
 class Ring {
     constructor() {
         this.store = new Array(2)
@@ -68,12 +69,14 @@ ring.unshift(0)
 // console.log("length"+ring.length)
 // console.log(ring.find(3))
 ring.unshift(3)//[3,0,1,2,3,4]
-console.log("store"+ring.store)
-console.log("length"+ring.length)
-console.log(ring.find(2))
-console.log("start"+ring.start)
-console.log(ring.find(ring.length-1))
+// console.log("store"+ring.store)
+// console.log("length"+ring.length)
+// console.log(ring.find(2))
+// console.log("start"+ring.start)
+// console.log(ring.find(ring.length-1))
 showRing(ring)
+
+customTest(ring.find(2), 4, "Great", "Dang it shouldve been "+ring.find(2))
 
 
 
